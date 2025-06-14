@@ -249,7 +249,10 @@ db = client["CursoMongoDBTest"]
 timezone = pytz.timezone('America/Bogota')
 
 # Limpiar la colección antes de insertar nuevos datos
-colecciones = [db["NivelCO2"],db["Temperatura"],db["Humedad"],db["RecorridoDrone"],db["DatosImagen"],db["IndicadoresKPI"],db["Velocidad"],db["LuzAmbiental"],db["ConsumoElectrico"],db["pH"],db["TemperaturaSuelo"],db["CantidadPasos"],db["PresionAtmosferica"],db["NivelTanqueAgua"],db["RitmoCardiaco"],db["TemperaturaCorporal"],db["MovimientoAcelerometro"],db["NivelRuidoAmbiental"],db["UsoCPU"],db["ConteoObjetosCamara"]]
+colecciones = [db["NivelCO2"],db["Temperatura"],db["Humedad"],db["RecorridoDrone"],db["DatosImagen"],db["IndicadoresKPI"],
+               db["Velocidad"],db["LuzAmbiental"],db["ConsumoElectrico"],db["pH"],db["TemperaturaSuelo"],db["CantidadPasos"],
+               db["PresionAtmosferica"],db["NivelTanqueAgua"],db["RitmoCardiaco"],db["TemperaturaCorporal"],db["MovimientoAcelerometro"],
+               db["NivelRuidoAmbiental"],db["UsoCPU"],db["ConteoObjetosCamara"]]
 for coleccion in colecciones:
     coleccion.delete_many({})
 
